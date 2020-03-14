@@ -1,20 +1,5 @@
 # Bootstrap4
 
-## Format:
-
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="Static/css/bootstrap.min.css"/>
-    </head>
-    <body>
-        <script src="Static/js/jquery.min.js"></script>
-        <script src="Static/js/popper.min.js"></script>
-        <script src="Static/js/bootstrap.min.js"></script>
-    </body>
-</html>
-
 ## container
 
 <div class="container">
