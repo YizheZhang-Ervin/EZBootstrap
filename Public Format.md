@@ -1,4 +1,4 @@
-1. Border
+## Border
    <span class="border"></span>
    <span class="border-top"></span>
    <span class="border-right"></span>
@@ -26,12 +26,12 @@
    <img src="1.jpg" alt="" class="rounded-circle">
    <img src="1.jpg" alt="" class="rounded-pill" style="width:140px;">
    <img src="1.jpg" alt="" class="rounded-0" style="border-radius:5px;">
-2. Float
+## Float
    <div class="border border-danger clearfix">
    <div class="float-left">left</div>
    <div class="float-right">right</div>
    </div>
-3. Color
+## Color
    <p class="text-primary">.text-primary</p>
    <p class="text-secondary">.text-secondary</p>
    <p class="text-success">.text-success</p>
@@ -61,7 +61,7 @@
    <p class="bg-light text-dark">.bg-light</p>
    <p class="bg-dark text-white">.bg-dark</p>
    <p class="bg-white text-dark">.bg-white</p>
-4. Display
+## Display
    <div class="d-inline">aaa</div>
    <div class="d-inline">bbb</div>
    <span class="d-block">111</span>
@@ -70,7 +70,7 @@
    <img src="1.jpg" alt="" class="d-none d-sm-inline-block">
    <p class="d-print-none">bbbbbb</p>
    <p class="d-none d-print-block">cccccc</p>
-5. Text
+## Text
    <p class="text-md-center">center</p>
    <p class="text-right">right</p>
    <p class="text-justify">111111111111111</p>
@@ -84,11 +84,11 @@
    <p class="font-weight-light">Light weight text.</p>
    <p class="font-italic">Italic text.</p>
    <p class="text-monospace">This is in monospace(same width)</p>
-6. Align
+## Align
    <button class="align-top">444</button>
    <td class="align-middle">middle</td>
    <td class="align-bottom">bottom</td>
-7. Size
+## Size
    <p class="bg-danger w-25">Width 25%</p>
    <p class="bg-danger w-50">Width 50%</p>
    <p class="bg-danger w-75">Width 75%</p>
@@ -98,33 +98,33 @@
    <div class="d-inline-block bg-primary h-75">Height 75%</div>
    <div class="d-inline-block bg-primary h-100">Height 100%</div>
    <div class="bg-primary mw-100 mh-100" style="width:300px;height:300px;"></div>
-8. Interval
+## Interval
    <div class="d-inline-block border border-danger p-md-5">555</div>
    <div class="d-block border border-danger w-25 mx-auto">666</div>
-9. Shadow
+## Shadow
    <div class="p-3 mb-5 bg-white rounded">777</div>
    <div class="p-3 mb-5 bg-white rounded shadow">888</div>
    <div class="p-3 mb-5 bg-white rounded shadow-sm">999</div>
    <div class="p-3 mb-5 bg-white rounded shadow-lg">000</div>
-10. Position
+## Position
     <div class="position-absolute">111</div>
     <div class="fixed-top">222</div>
     <div class="fixed-bottom">333</div>
     <div class="bg-primary sticky-top" style="height:50px;">444</div>
-11. Visibility
+## Visibility
     <span class="invisible">bbb</span>
-12. Close
+## Close
     <button type="button" class="close">555</button>
-13. Embed
+## Embed
     <div class="embed-responsive embed-responsive-16by9">
     <iframe src="" class="embed-responsive-item"></iframe>
     </div>
-14. Image substitude
+## Image substitude
     <h1 class="text-hide" style="background-image:url('images/sm.jpg');width:75px;height:75px;">666</h1>
-15. Screen reader
+## Screen reader
     <span class="sr-only">777</span>
     <a class="sr-only sr-only-focusable" href="#content">888</a>
-16. Flex layout
+## Flex layout
     <div class="myFlex d-flex flex-lg-row">
         <div>1</div>
         <div>2</div>
