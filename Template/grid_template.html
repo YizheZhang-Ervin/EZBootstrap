@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="Static/css/bootstrap.min.css" />
+    <title>Grid Template</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- given number:max 12 columns -->
+        <div class="col-xl-2" style="background-color: blue;">111</div>
+        <div class="col-lg-2" style="background-color: gold;">222</div>
+        <!-- mix use -->
+        <div class="col-sm-6 col-lg-3" style="background: orange;">333</div>
+        <div class="col-md-2" style="background-color: orange;">333</div>
+        <div class="col-sm-2" style="background-color: green;">444</div>
+        <!-- start a new line -->
+        <div class="w-100">nnnn</div>
+        <!-- average width -->
+        <div class="col" style="background-color: red;">555</div>
+        <!-- set width=5 -->
+        <div class="col-5" style="background-color: blue;">666</div>
+        <!-- changable width -->
+        <div class="col-5" style="background-color: gold;">777</div>
+      </div>
+      <!-- vertical align -->
+      <div class="row align-items-xl-start">
+        <div class="col-2 align-self-center" style="background: gold;">888</div>
+      </div>
+      <!-- horizontal align -->
+      <div class="row justify-content-xl-start">999</div>
+      <div class="row justify-content-md-center">1111</div>
+      <div class="row justify-content-end">2222</div>
+      <!-- same distance between divs -->
+      <div class="row justify-content-around">3333</div>
+      <!-- two side align -->
+      <div class="row justify-content-between">4444</div>
+      <!-- clean distance -->
+      <div class="row no-gutters">5555</div>
+      <!-- reorder -->
+      <div class="row">
+        <div class="col-3 order-12">6666</div>
+        <div class="col-3 order-xl-5">7777</div>
+        <div class="col-3 order-0">8888</div>
+        <div class="col-3 order-first">9999</div>
+      </div>
+      <!-- offset -->
+      <div class="row">
+        <div class="col-3 offset-xl-3">11</div>
+        <div class="col-3 offset-5">22</div>
+      </div>
+      <!-- margin layout -->
+      <div class="row">
+        <!-- on the left -->
+        <div class="col-3 ml-auto">33</div>
+        <!-- on the right -->
+        <div class="col-3 mr-auto">44</div>
+      </div>
+      <!-- embed -->
+      <div class="row">
+        <div class="col-3 ">
+          <div class="row">
+            <div class="col-3">55</div>
+            <div class="col-3">66</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
