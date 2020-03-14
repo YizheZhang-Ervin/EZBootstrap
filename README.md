@@ -1,25 +1,22 @@
 # EZBootstrap
 
 ## Bootstrap4
-
-- Download File Format:
-
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="Static/css/bootstrap.min.css"/>
-    </head>
-    <body>
-        <script src="Static/js/jquery.min.js"></script>
-        <script src="Static/js/popper.min.js"></script>
-        <script src="Static/js/bootstrap.min.js"></script>
-    </body>
-</html>
+    <!doctype html>  
+    <html lang="en">  
+        <head>  
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+            <link rel="stylesheet" href="Static/css/bootstrap.min.css"/>  
+        </head>  
+        <body>  
+            <script src="Static/js/jquery.min.js"></script>  
+            <script src="Static/js/popper.min.js"></script>  
+            <script src="Static/js/bootstrap.min.js"></script>  
+        </body>  
+    </html>  
 
 ## Files of this github
 
-- CDN Format: CDN_template.html
+- CDN Format without downloading files: CDN_template.html
 - Static: css/js/Font
 - Template: some format of Bootstrap
 - \*.md: knowledges(layout/content/public format/component)
