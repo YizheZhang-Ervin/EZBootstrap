@@ -26,15 +26,15 @@
 ### Layout
 
 1. container
-2. Grid
-   2.1 Automatic layout column
-   2.2 Response class selector
-   2.3 Align
-   2.4 Reorder
-   2.5 Column nested
-3. Response
-   3.1 Forbid response
-   3.2 Demarcation point of Response
+2. Grid  
+   2.1 Automatic layout column  
+   2.2 Response class selector  
+   2.3 Align  
+   2.4 Reorder  
+   2.5 Column nested  
+3. Response  
+   3.1 Forbid response  
+   3.2 Demarcation point of Response  
 
 ### Content
 
