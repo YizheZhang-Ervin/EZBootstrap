@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+
+main{
+    width:100vw;
+    height:100vh;
+    background-color: #34495e;
+    transform: scale(0);
+    animation-name: scale;
+    animation-duration: 3s;
+    /* 留在最后一个状态 */
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main::after{
+    content:"123";
+    font-size: 2em;
+    color:white;
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 3s;
+    /* 延迟 */
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacity{
+    to{
+        opacity:8
+    }
+}
+
+@keyframes scale{
+    25%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1) rotate(360deg);
+    }
+    75%{
+        transform: scale(0.5);
+        border-radius: 50%;
+    }
+    100%{
+        transform: scale(1);
+    }
+}

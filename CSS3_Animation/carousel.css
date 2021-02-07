@@ -1,0 +1,27 @@
+body{
+    overflow: hidden;
+}
+section{
+    display: grid;
+    grid-template: 1fr/repeat(3,400px);
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-timing-function: steps(3,end);
+    animation-iteration-count: infinite;
+    width:1200px;
+    height:200px;
+}
+
+section:hover{
+    animation-play-state: paused;
+}
+
+section div{
+    overflow: hidden;
+}
+
+@keyframes slide{
+    to{
+        transform: translateX(-1200px);
+    }
+}

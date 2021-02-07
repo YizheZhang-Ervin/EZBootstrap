@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width:400px;
+    height:400px;
+    background-color: white;
+    animation-name: hd;
+    animation-duration: 3s;
+}
+
+main div{
+    width:200px;
+    height:200px;
+    background-color: gold;
+    transform:rotate(45deg) scale(0.5);
+
+    /* 3个动画第一个3s，第二个2s，第三个3s */
+    /* 后出现优先级高 */
+    animation-name: hd,hd2,hd3;
+
+    animation-duration: 3s,2s;
+    /* 执行多次 */
+    /* animation-iteration-count: infinite,3; */
+
+    /* 执行0%->100% 用normal */
+    /* 执行100%->0% 用reverse */
+    /* 0%->100%->0% 用alternate */
+    /* 100%->0%->100% 用alternate-reverse */
+    animation-direction: alternate-reverse;
+
+    /* 延迟,当无限循环时用好 */
+    animation-delay: 2s;
+
+    /* 速度变化 ease/ease-in/ease-out/ease-in-out/linear/cubic-bezier()自定义 */
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    /* 速度变化 steps(步数,start第一时间就动/end第一时间在原点)/step-start/step-end两帧切换 */
+    /* animation-timing-function: steps(4,start); */
+
+    /* 填充 forwards结束用最后一帧，backwards延迟中用第一帧，不定义则为元素样式，both=backwards+forwards */
+    animation-fill-mode: backwards;
+    /* 组合使用名字时间必须要 */
+    /* animation: 名字 时间 延迟 填充 等; */
+}
+
+main div::after{
+    content:'';
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: gold;
+    transform: translateY(-100px);
+}
+
+main div::before{
+    content:'';
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: gold;
+    transform: translateX(-100px);
+}
+
+main:hover{
+    animation-play-state: paused;
+}
+
+
+@keyframes hd{
+    /* 起始 或用 0% 或 不写为元素原始样式 */
+    0%{
+        background-color: white;
+    }
+    25%{
+        transform: scale(2);
+    }
+    65%{
+        transform: scale(1);
+        background-color: cornflowerblue;
+    }
+    /* 终点 或用 100% 或 不写为元素原始样式 */
+    100%{
+        background-color: chocolate;
+    }
+}
+
+@keyframes hd2{
+    25%{
+        transform: translateX(300px);
+    }
+    50%{
+        transform: translate(300px,300px);
+    }
+    75%{
+        transform: translateY(300px);
+    }
+    /* 组合写 */
+    25%,75%{
+        background-color: darkorchid;
+        border-radius: 50%;
+    }
+}
+
+
+.button{
+    width:100px;
+    height:100px;
+    color:red;
+}
+
+.button::after{
+    content:'';
+    width: 3px;
+    height:3px;
+    display: inline-block;
+    color:red;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dots{
+    from{
+        box-shadow: none;
+    }
+    30%{
+        box-shadow: 3px 0 0 currentColor;
+    }
+    60%{
+        box-shadow: 3px 0 0 currentColor,9px 0 0 currentColor
+    }
+}

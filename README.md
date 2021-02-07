@@ -1,90 +1,34 @@
-# EZBootstrap
+# Bootstrap + Canvas Game + CSS3 Animation  
+Templates and knowledges  
 
-## Bootstrap4
-    <!doctype html>  
-    <html lang="en">  
-        <head>  
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
-            <link rel="stylesheet" href="Static/css/bootstrap.min.css"/>  
-        </head>  
-        <body>  
-            <script src="Static/js/jquery.min.js"></script>  
-            <script src="Static/js/popper.min.js"></script>  
-            <script src="Static/js/bootstrap.min.js"></script>  
-        </body>  
-    </html>  
+## Canvas
+ctx = element.getContext  
+ctx.drawImage(img,cutX,cutY,cuWw,cutH,x,y,w,h)  
+ctx.drawRect(x,y,w,h)  // xy距离左上角  
 
-## Files of this github
+## CSS3
+1. animation  
+组合使用多个则动画名字+持续时间必须要，其他可选  
 
-- CDN Format without downloading files: CDN_template.html
-- Static: css/js/Font
-- Template: some format of Bootstrap
-- \*.md: knowledges(layout/content/public format/component)
+2. animation-name动画名称
+重复定义后出现优先级高  
 
-## Knowledge Menu
+3. animation-duration动画持续时间  
 
-### Layout
+4. animation-iteration-count动画迭代次数  
+数字或infinite  
 
-1. container
-2. Grid  
-   2.1 Automatic layout column  
-   2.2 Response class selector  
-   2.3 Align  
-   2.4 Reorder  
-   2.5 Column nested  
-3. Response  
-   3.1 Forbid response  
-   3.2 Demarcation point of Response  
+5. animation-direction动画变化方向0%<->100%  
+normal/reverse/alternate/alternatate-reverse   
 
-### Content
+6. animation-delay延迟时间  
 
-1. Composing
-2. Coding
-3. Picture
-4. Table
+7. animation-timing-function速度变化  
+ease/ease-in/ease-out/ease-in-out/linear/cubic-bezier()  
+steps(步数,start/end)/step-start/step-end  
 
-### Public Format
+8. animation-fill-mode填充  
+forwards/backwards/both  
 
-1. Border
-2. Float
-3. Color
-4. Display
-5. Text
-6. Align
-7. Size
-8. Interval
-9. Shadow
-10. Position
-11. Visibility
-12. Close
-13. Embed
-14. Image substitude
-15. Screen reader
-16. Flex layout
-
-### Component
-
-1. alert
-2. badge
-3. breadcrumb
-4. button
-5. dropdowns
-6. btn-group
-7. input
-8. form
-9. carousel
-10. jumbotron
-11. list-group
-12. media-object
-13. toast
-14. tooltip
-15. popover
-16. modal
-17. nav
-18. navbar
-19. card
-20. collapse
-21. pagination
-22. progress
-23. scrollspy
-24. spinners
+9. animation-play-state播放状态  
+running/paused  
